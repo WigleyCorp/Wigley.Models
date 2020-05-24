@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Wigley.Models")]
-[assembly: AssemblyCopyright("Copyright ©  2017 gOOva")]
+[assembly: AssemblyCopyright("Copyright ©  2020 Wigley")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
