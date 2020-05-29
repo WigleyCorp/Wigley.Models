@@ -11,11 +11,11 @@ namespace Wigley
     public enum CardTypes
     {
         [EnumMember]
-        UruguayDebit=1,
+        MexicanDebit=1,
         [EnumMember]
-        UruguayCredit=2,
+        MexicanCredit = 2,
         [EnumMember]
-        UruguayPrepaid=5,
+        MexicanPrepaid = 5,
         [EnumMember]
         Debit=3,
         [EnumMember]
