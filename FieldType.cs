@@ -75,8 +75,10 @@ namespace Wigley
 
         //Prosa
         FIID = 0x901,
-        AuthServiceXid = 0x902,
-        AuthServiceEciRaw = 0x903,
-        AuthServiceCavv = 0x904,
+        MCC = 0x902,
+        Auth3DSEciRaw = 0x903,
+        Auth3DSServiceCavv = 0x904,
+        Auth3DSServiceXid = 0x905,
+        Auth3DSStatus = 0x906,
     }
 }

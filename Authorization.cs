@@ -22,5 +22,7 @@ namespace Wigley
         public string ExtendableInstrumentToken { get; set; }
         [DataMember]
         public bool DoNotUseCallback { get; set; }
+        [DataMember]
+        public int? OptionalCommerceId { get; set; }
     }
 }
