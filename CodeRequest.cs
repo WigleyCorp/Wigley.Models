@@ -13,5 +13,8 @@ namespace Wigley
 
         [DataMember]
         public string IssuerReferenceId { get; set; }
+
+        [DataMember]
+        public decimal? ReturnAmount { get; set; }
     }
 }

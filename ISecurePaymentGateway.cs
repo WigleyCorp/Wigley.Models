@@ -16,6 +16,10 @@ namespace Wigley
         Task<ServerSignedResponse<Session>> Authorize(ClientSignedRequest<Authorization> authorization);
 
         [OperationContract]
+        [WebInvoke(UriTemplate = "ExpressCheckout", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, Method = "POST")]
+        Task<ServerSignedResponse<Session>> ExpressCheckout(ClientSignedRequest<ExpressCheckoutRequest> expressCheckout);
+
+        [OperationContract]
         [WebInvoke(UriTemplate = "Operation/Purchase", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, Method = "POST")]
         Task<ServerSignedResponse<Transaction>> Purchase(ClientSignedRequest<PaymentRequest> payment);
 
