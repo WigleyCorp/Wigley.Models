@@ -7,5 +7,8 @@ namespace Wigley
     {
         [DataMember]
         public bool Commit { get; set; }
+
+        [DataMember]
+        public decimal? FinalAmount { get; set; }
     }
 }
