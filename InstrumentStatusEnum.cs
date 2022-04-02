@@ -22,5 +22,7 @@ namespace Wigley
         WaitingForConfirmation,
         [EnumMember]
         Deleted
+        [EnumMember]
+        AuthenticationFailed
     }
 }

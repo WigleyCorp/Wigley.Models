@@ -69,7 +69,7 @@ namespace Wigley
         ProviderBranchNumber = 0x806,
         CommerceReserveExpirationInSeconds=0x807,
         SoftDescriptor,
-        //MCC,
+        MCC,
         CommerceCountry,
         CommerceCity,
         CommerceRUT,
@@ -92,13 +92,19 @@ namespace Wigley
         Pin = 0x8181,
         CVC = 0x8182,
 
+        //Cybersource
+        AuthServiceCommerceIndicator = 0x901,
+        AuthServiceXid = 0x902,
+        AuthServiceEciRaw = 0x903,
+        AuthServiceCavv = 0x904,
+
         //Prosa
-        FIID = 0x901,
-        MCC = 0x902,
-        Auth3DSEciRaw = 0x903,
-        Auth3DSServiceCavv = 0x904,
-        Auth3DSServiceXid = 0x905,
-        Auth3DSStatus = 0x906,
-        Network = 0x907,
+        FIID = 0x905,//FIID = 0x901,
+        //MCC = 0x902,
+        Auth3DSEciRaw = 0x906,//Auth3DSEciRaw = 0x903,
+        Auth3DSServiceCavv = 0x907,//Auth3DSServiceCavv = 0x904,
+        Auth3DSServiceXid = 0x908,//Auth3DSServiceXid = 0x905,
+        Auth3DSStatus = 0x909,//Auth3DSStatus = 0x906,
+        Network = 0x910,//Network = 0x907,
     }
 }
