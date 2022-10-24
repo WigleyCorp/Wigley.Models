@@ -24,6 +24,10 @@ namespace Wigley
         Task<ServerSignedResponse<Transaction>> Purchase(ClientSignedRequest<PaymentRequest> payment);
 
         [OperationContract]
+        [WebInvoke(UriTemplate = "Operation/PurchaseList", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, Method = "POST")]
+        Task<ServerSignedResponse<PaymentRequestList>> PurchaseList(ClientSignedRequest<PaymentRequestList> payment);
+
+        [OperationContract]
         [WebInvoke(UriTemplate = "Operation/Cancel", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, Method = "POST")]
         Task<ServerSignedResponse<Transaction>> Cancel(ClientSignedRequest<CancelRequest> payment);
 

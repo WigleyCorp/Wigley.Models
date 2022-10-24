@@ -24,5 +24,9 @@ namespace Wigley
         public bool? DoNotUseCallback { get; set; }
         [DataMember]
         public int? OptionalCommerceId { get; set; }
+        [DataMember]
+        public List<string> LimitBanks { get; set; }
+        [DataMember]
+        public WebFormSettingsDto WebFormSettings { get; set; }
     }
 }

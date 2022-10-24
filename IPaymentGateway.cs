@@ -20,6 +20,10 @@ namespace Wigley
         Task<ServerResponse<Transaction>> Purchase(PaymentRequest payment);
 
         [OperationContract]
+        [WebInvoke(UriTemplate = "Operation/PurchaseList", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, Method = "POST")]
+        Task<ServerResponse<PaymentRequestList>> PurchaseList(PaymentRequestList payment);
+
+        [OperationContract]
         [WebInvoke(UriTemplate = "ExpressCheckout", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, Method = "POST")]
         Task<ServerResponse<Session>> ExpressCheckout(ExpressCheckoutRequest expressCheckout);
 
